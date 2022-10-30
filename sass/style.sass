@@ -1,0 +1,79 @@
+body
+	margin: 0
+	min-width: 1366px
+	background-color: #F8F6F5
+	color: #695A59
+	font-family: 'Montserrat', sans-serif
+	// font-family: 'Old Standard TT', serif
+	font-size: 18px
+	font-weight: 500
+	line-height: 32px
+
+.visually-hidden
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	border: 0
+	padding: 0
+	white-space: nowrap
+	clip-path: inset(100%)
+	clip: rect(0 0 0 0)
+	overflow: hidden
+
+.container
+	width: 1166px
+	margin: 0 auto
+
+.header
+	display: grid
+	grid-template-columns: repeat(12, 1fr)
+	grid-column-gap: 20px
+	align-items: center
+	padding-top: 10px
+	padding-bottom: 10px
+	min-height: 96px
+	box-sizing: border-box
+	font-size: 14px
+	&-logo
+		grid-column: 1 / span 4
+		display: grid
+		grid-template-columns: auto auto
+		text-decoration: none
+		color: #695A59
+		p
+			margin: 0
+		img
+			text-content: center
+	&-phone
+		grid-column: 7 / span 2
+		display: grid
+		grid-template-columns: auto auto
+		
+		line-height: 24px
+		color: #695A59
+		text-decoration: none
+		span
+			grid-column: 2
+			text-decoration: underline
+		&::before
+			content: ''
+			width: 18px
+			height: 24px
+			background-image: url("../img/phone.svg")
+			background-repeat: no-repeat
+			background-position: center
+	&-address
+		grid-column: 9 / span 3
+		display: grid
+		grid-template-columns: auto auto
+		font-style: normal
+		line-height: 24px
+		&::before
+			content: ''
+			width: 16px
+			height: 20px
+			background-image: url("../img/pin.svg")
+			background-repeat: no-repeat
+			background-position: center
+			
