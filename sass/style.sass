@@ -181,3 +181,134 @@ body
 		background-repeat: no-repeat
 		background-position: center
 		background-size: cover
+
+// The Best
+.best
+	padding-top: 105px
+	&-lead
+		margin: 0
+		font-family: 'Old Standard TT', serif
+		font-weight: 400
+		font-size: 42px
+		line-height: 54px
+		text-transform: uppercase
+		color: #695A59
+	&-list
+		padding: 0
+		margin: 14px 0 0 0
+		list-style: none
+		display: grid
+		grid-template-columns: repeat(12, 1fr)
+		gap: 20px
+	&-item
+		grid-column: span 4
+		display: grid
+		grid-template-rows: 240px auto
+		background-color: #FFFFFF
+		&-horizontal
+			grid-column: span 6
+			grid-template-columns: repeat(6, 1fr)
+			grid-template-rows: auto
+			column-gap: 20xp
+			&-img
+				grid-column: 1 / span 2
+				img
+					display: block
+					width: 100%
+					height: 100%
+					object-fit: covers
+			&-content
+				grid-column: 3 /  -1
+				padding: 35px 35px 40px 35px
+				h3
+					margin: 0 0 22px 0
+					font-family: 'Old Standard TT', serif
+					font-weight: 400
+					font-size: 32px
+					line-height: 36px
+				.best-item-price
+					font-weight: 700
+					font-size: 22px
+					line-height: 24px
+					color: #343235
+				.best-item-notice
+					font-weight: 500
+					font-size: 14px
+					line-height: 20px
+					color: #695A59
+					opacity: 0.6
+				a
+					font-weight: 700
+					font-size: 12px
+					line-height: 16px
+					text-transform: uppercase
+					color: #9A8584
+		&-content
+			padding: 35px 35px 40px 35px
+			h3
+				margin: 0 0 22px 0
+				font-family: 'Old Standard TT', serif
+				font-weight: 400
+				font-size: 32px
+				line-height: 36px
+			.best-item-price
+				font-weight: 700
+				font-size: 22px
+				line-height: 24px
+				color: #343235
+			.best-item-notice
+				font-weight: 500
+				font-size: 14px
+				line-height: 20px
+				color: #695A59
+				opacity: 0.6
+			a
+				font-weight: 700
+				font-size: 12px
+				line-height: 16px
+				text-transform: uppercase
+				color: #9A8584
+
+.slider
+	position: relative
+	padding-top: 120px
+	box-sizing: border-box
+	
+	&-lead
+		margin: 0
+		font-family: 'Old Standard TT', serif
+		font-weight: 400
+		font-size: 42px
+		line-height: 54px
+		text-transform: uppercase
+		color: #695A59
+	&-bar
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		&-content
+			display: flex
+			justify-content: space-between
+			background: rgba(52, 50, 53, 0.9)
+		&-headline
+			font-weight: 400
+			font-size: 32px
+			line-height: 36px
+			color: #F5F2ED
+		&-btn
+			position: absolute
+			widows: 72px
+			height: 72px
+			left: -32px
+			top: -10
+			bottom: -10
+			border: none
+			border-radius: 100%
+			background-color: #343235
+			&-next
+				left: auto
+				right: -32px
+				top: 0
+				bottom: 0
+				margin: auto
+
